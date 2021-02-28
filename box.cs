@@ -15,13 +15,13 @@ public class box : MonoBehaviour
     void OnCollisionEnter(UnityEngine.Collision collision)
     {
 
-        if (collision.gameObject.name == "dollar") {
+        if (collision.gameObject.name == "dollar") { // visible dollar
             foreach(GameObject obj in GameObject.FindObjectsOfType<GameObject>()) {
             
-                if (obj.name == "dollar1") {
+                if (obj.name == "dollar1") { // invisible dollar
                     obj.GetComponent<MeshRenderer>().enabled = true;
                 }
-                if (obj.name == "hand1") {
+                if (obj.name == "hand1") { // invisible hand
                     obj.GetComponent<MeshRenderer>().enabled = true;
                     yield return new WaitForSeconds(3); // wait 3 seconds
                     obj.Rotate (0, rotation, 0);
