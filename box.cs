@@ -3,13 +3,12 @@ using System.Collections.Generic;
 using System;
 using UnityEngine;
 
-public class handshow : MonoBehaviour
+public class box : MonoBehaviour
 {
     public float rotation = 90f;
     void Start()
     {
-        // start script for invisible hands and dollars:
-        // gameObject.GetComponent<MeshRenderer>().enabled = false;
+
     }
     // enable gravity for dollars but not hands
 
