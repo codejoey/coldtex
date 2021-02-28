@@ -41,7 +41,7 @@ public class LightSwitchBottonController : MonoBehaviour
 
             lightsOn = !lightsOn;
 
-            toggleLights;
+            toggleLights();
         }
     }
 
@@ -73,7 +73,7 @@ public class LightSwitchBottonController : MonoBehaviour
     {
         if(other.CompareTag("PlayerHand"))
         {
-            switchHit = true;
+            buttonHit = true;
         }
     }
 }
